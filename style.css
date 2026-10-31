@@ -1,294 +1,580 @@
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <meta name="description" content="Samyak's personal portfolio. A student exploring programming, computer science and technology.">
-
-    <title>Samyak — Developer & Builder</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-
-    <div class="background-glow"></div>
-
-    <header>
-        <nav class="container">
-            <a href="#" class="logo">samyak<span>.</span></a>
-
-            <div class="nav-links">
-                <a href="#about">About</a>
-                <a href="#projects">Projects</a>
-                <a href="#skills">Skills</a>
-                <a href="#contact">Contact</a>
-            </div>
-
-            <a class="nav-button" href="https://github.com/samyakforge" target="_blank" rel="noopener noreferrer">
-                GitHub ↗
-            </a>
-        </nav>
-    </header>
-
-    <main>
-
-        <!-- HERO -->
-
-        <section class="hero container">
-            <div class="hero-content reveal">
-
-                <div class="status">
-                    <span class="status-dot"></span>
-                    Exploring. Learning. Building.
-                </div>
-
-                <p class="eyebrow">STUDENT DEVELOPER · NEPAL</p>
-
-                <h1>
-                    Turning curiosity<br>
-                    into <span class="gradient-text">creation.</span>
-                </h1>
-
-                <p class="hero-description">
-                    Hi, I'm Samyak. I enjoy programming, exploring technology
-                    and figuring out how things work. Currently learning,
-                    experimenting and building projects along the way.
-                </p>
-
-                <div class="hero-buttons">
-                    <a href="#projects" class="button primary">
-                        Explore my work <span>↗</span>
-                    </a>
-
-                    <a href="#about" class="button secondary">
-                        More about me
-                    </a>
-                </div>
-
-            </div>
-
-            <div class="hero-side reveal">
-                <div class="orb">
-                    <div class="orb-inner">S<span>.</span></div>
-                </div>
-                <p>Curiosity is where it starts.</p>
-            </div>
-        </section>
-
-
-        <!-- ABOUT -->
-
-        <section id="about" class="section container reveal">
-
-            <div class="section-heading">
-                <p class="eyebrow">01 / ABOUT</p>
-                <h2>A little about me.</h2>
-            </div>
-
-            <div class="about-grid">
-                <div class="about-main">
-                    <p class="large-text">
-                        I like understanding how things work —
-                        and then trying to build something myself.
-                    </p>
-
-                    <p class="muted">
-                        I'm a student from Nepal interested in computer science,
-                        software development and electronics. I enjoy experimenting
-                        with ideas, learning new technologies and improving through
-                        hands-on projects.
-                    </p>
-                </div>
-
-                <div class="about-card">
-                    <span class="card-icon">⌘</span>
-                    <h3>Currently exploring</h3>
-                    <p>Programming, web development, electronics and new ideas.</p>
-                </div>
-            </div>
-
-        </section>
-
-
-        <!-- PROJECTS -->
-
-        <section id="projects" class="section container reveal">
-
-            <div class="section-heading">
-                <p class="eyebrow">02 / PROJECTS</p>
-                <h2>Things I've worked on.</h2>
-                <p class="muted">A collection of experiments and projects.</p>
-            </div>
-
-            <div class="project-grid">
-
-                <article class="project-card">
-                    <div class="project-top">
-                        <span class="project-number">01</span>
-                        <span class="project-arrow">↗</span>
-                    </div>
-
-                    <div class="project-visual visual-one">
-                        <span>01</span>
-                    </div>
-
-                    <h3>Personal Portfolio</h3>
-                    <p>
-                        A personal website built to document my journey,
-                        experiments and projects.
-                    </p>
-
-                    <div class="tags">
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>JavaScript</span>
-                    </div>
-
-                    <a href="https://github.com/samyakforge/samyakforge.github.io"
-                       target="_blank" rel="noopener noreferrer" class="project-link">
-                        View source code ↗
-                    </a>
-                </article>
-
-                <article class="project-card coming-soon">
-                    <div class="project-top">
-                        <span class="project-number">02</span>
-                        <span class="project-arrow">✳</span>
-                    </div>
-
-                    <div class="project-visual visual-two">
-                        <span>02</span>
-                    </div>
-
-                    <h3>Something in progress</h3>
-                    <p>
-                        An idea waiting to become a real project.
-                        More details coming soon.
-                    </p>
-
-                    <div class="tags">
-                        <span>Experiment</span>
-                        <span>In progress</span>
-                    </div>
-                </article>
-
-                <article class="project-card coming-soon">
-                    <div class="project-top">
-                        <span class="project-number">03</span>
-                        <span class="project-arrow">✳</span>
-                    </div>
-
-                    <div class="project-visual visual-three">
-                        <span>03</span>
-                    </div>
-
-                    <h3>Future project</h3>
-                    <p>
-                        More experiments, more learning and hopefully
-                        something interesting.
-                    </p>
-
-                    <div class="tags">
-                        <span>Coming soon</span>
-                    </div>
-                </article>
-
-            </div>
-
-        </section>
-
-
-        <!-- SKILLS -->
-
-        <section id="skills" class="section container reveal">
-
-            <div class="section-heading">
-                <p class="eyebrow">03 / SKILLS</p>
-                <h2>Tools I'm learning.</h2>
-                <p class="muted">
-                    Technologies I'm exploring and improving with.
-                </p>
-            </div>
-
-            <div class="skills-grid">
-                <div class="skill">
-                    <span class="skill-icon">C</span>
-                    <div>
-                        <h3>C / C++</h3>
-                        <p>Programming fundamentals</p>
-                    </div>
-                </div>
-
-                <div class="skill">
-                    <span class="skill-icon">⌘</span>
-                    <div>
-                        <h3>HTML & CSS</h3>
-                        <p>Web structure and design</p>
-                    </div>
-                </div>
-
-                <div class="skill">
-                    <span class="skill-icon">JS</span>
-                    <div>
-                        <h3>JavaScript</h3>
-                        <p>Interactive web development</p>
-                    </div>
-                </div>
-
-                <div class="skill">
-                    <span class="skill-icon">⌁</span>
-                    <div>
-                        <h3>Electronics</h3>
-                        <p>Arduino and embedded systems</p>
-                    </div>
-                </div>
-            </div>
-
-        </section>
-
-
-        <!-- CONTACT -->
-
-        <section id="contact" class="section container reveal">
-
-            <div class="contact-card">
-                <p class="eyebrow">04 / CONTACT</p>
-
-                <h2>Have an interesting idea?</h2>
-
-                <p class="muted">
-                    I'm always interested in learning, building
-                    and exploring new things.
-                </p>
-
-                <a href="https://github.com/samyakforge"
-                   target="_blank" rel="noopener noreferrer" class="button primary">
-                    Find me on GitHub ↗
-                </a>
-            </div>
-
-        </section>
-
-    </main>
-
-
-    <footer class="container">
-        <a href="#" class="logo">samyak<span>.</span></a>
-
-        <p>© <span id="year"></span> Samyak. Built with curiosity.</p>
-
-        <a href="https://github.com/samyakforge"
-           target="_blank" rel="noopener noreferrer">GitHub ↗</a>
-    </footer>
-
-    <script src="script.js"></script>
-
-</body>
-</html>
+:root {
+    --bg: #080808;
+    --surface: #111111;
+    --surface-light: #171717;
+    --text: #f5f5f5;
+    --muted: #929292;
+    --accent: #b7a5ff;
+    --border: #252525;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'DM Sans', sans-serif;
+    line-height: 1.7;
+    overflow-x: hidden;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.container {
+    width: min(1100px, 88%);
+    margin: auto;
+}
+
+.background-glow {
+    position: absolute;
+    top: -300px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 800px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(142, 112, 255, 0.13), transparent 70%);
+    pointer-events: none;
+    z-index: -1;
+}
+
+/* NAVIGATION */
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(8, 8, 8, 0.82);
+    backdrop-filter: blur(18px);
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 19px 0;
+}
+
+.logo {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: -1.5px;
+}
+
+.logo span {
+    color: var(--accent);
+}
+
+.nav-links {
+    display: flex;
+    gap: 32px;
+}
+
+.nav-links a {
+    color: var(--muted);
+    font-size: 13px;
+    transition: 0.2s;
+}
+
+.nav-links a:hover,
+footer a:hover {
+    color: var(--accent);
+}
+
+.nav-button {
+    font-size: 12px;
+    padding: 9px 17px;
+    border: 1px solid var(--border);
+    border-radius: 30px;
+    transition: 0.2s;
+}
+
+.nav-button:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+}
+
+/* HERO */
+
+.hero {
+    min-height: 650px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.status {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    padding: 7px 13px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 30px;
+    color: #c4c4c4;
+    font-size: 11px;
+    margin-bottom: 32px;
+}
+
+.status-dot {
+    width: 7px;
+    height: 7px;
+    background: #8be0a1;
+    border-radius: 50%;
+    box-shadow: 0 0 12px #8be0a1;
+}
+
+.eyebrow {
+    color: var(--accent);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 17px;
+}
+
+h1, h2, h3 {
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+h1 {
+    font-size: clamp(48px, 7vw, 82px);
+    line-height: 1.08;
+    letter-spacing: -4px;
+    margin-bottom: 25px;
+}
+
+.gradient-text {
+    background: linear-gradient(100deg, #b7a5ff, #e1d9ff, #8f79ed);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.hero-description {
+    color: var(--muted);
+    font-size: 16px;
+    max-width: 520px;
+    margin-bottom: 30px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 13px;
+    flex-wrap: wrap;
+}
+
+.button {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 21px;
+    border-radius: 30px;
+    font-size: 13px;
+    font-weight: 600;
+    transition: 0.25s;
+}
+
+.button:hover {
+    transform: translateY(-3px);
+}
+
+.primary {
+    background: #f5f5f5;
+    color: #090909;
+}
+
+.primary:hover {
+    background: var(--accent);
+}
+
+.secondary {
+    border: 1px solid var(--border);
+    color: var(--text);
+}
+
+.secondary:hover {
+    border-color: var(--accent);
+}
+
+.hero-side {
+    text-align: center;
+}
+
+.orb {
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 35% 30%, #b7a5ff, #4e3a94 45%, #171222 75%);
+    display: grid;
+    place-items: center;
+    box-shadow: 0 0 100px rgba(142, 112, 255, 0.15);
+    animation: float 5s ease-in-out infinite;
+}
+
+.orb-inner {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 90px;
+    font-weight: 700;
+    color: white;
+    text-shadow: 0 4px 30px rgba(0,0,0,0.3);
+}
+
+.orb-inner span {
+    color: #d8ceff;
+}
+
+.hero-side p {
+    color: var(--muted);
+    font-size: 11px;
+    margin-top: 25px;
+}
+
+/* SECTIONS */
+
+.section {
+    padding: 100px 0;
+    border-top: 1px solid var(--border);
+}
+
+.section-heading {
+    margin-bottom: 45px;
+}
+
+.section-heading h2 {
+    font-size: clamp(30px, 4vw, 43px);
+    letter-spacing: -2px;
+    margin-bottom: 10px;
+}
+
+.muted {
+    color: var(--muted);
+    font-size: 14px;
+}
+
+/* ABOUT */
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 35px;
+    align-items: stretch;
+}
+
+.large-text {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 27px;
+    line-height: 1.4;
+    letter-spacing: -0.8px;
+    max-width: 570px;
+    margin-bottom: 20px;
+}
+
+.about-card {
+    padding: 30px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 15px;
+}
+
+.card-icon {
+    color: var(--accent);
+    font-size: 30px;
+}
+
+.about-card h3 {
+    margin: 15px 0 8px;
+}
+
+.about-card p {
+    color: var(--muted);
+    font-size: 13px;
+}
+
+/* PROJECTS */
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.project-card {
+    padding: 20px;
+    border: 1px solid var(--border);
+    background: var(--surface);
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-6px);
+    border-color: #65569c;
+    background: #14121b;
+}
+
+.project-top {
+    display: flex;
+    justify-content: space-between;
+    color: var(--muted);
+    font-size: 12px;
+}
+
+.project-arrow {
+    color: var(--accent);
+}
+
+.project-visual {
+    height: 135px;
+    margin: 20px 0;
+    border-radius: 9px;
+    display: grid;
+    place-items: center;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 42px;
+    font-weight: 700;
+    overflow: hidden;
+}
+
+.visual-one {
+    background: radial-gradient(circle at 50% 40%, #54418d, #211a37 70%);
+    color: #e2d9ff;
+}
+
+.visual-two {
+    background: linear-gradient(135deg, #172e39, #17211f);
+    color: #a4d7cb;
+}
+
+.visual-three {
+    background: linear-gradient(135deg, #362020, #211515);
+    color: #e3b3b3;
+}
+
+.project-card h3 {
+    font-size: 19px;
+    margin-bottom: 8px;
+}
+
+.project-card > p {
+    color: var(--muted);
+    font-size: 12px;
+    min-height: 60px;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    margin: 18px 0;
+}
+
+.tags span {
+    padding: 5px 9px;
+    border-radius: 5px;
+    background: var(--surface-light);
+    color: #bdbdbd;
+    font-size: 10px;
+}
+
+.project-link {
+    display: inline-block;
+    color: var(--accent);
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.coming-soon {
+    opacity: 0.8;
+}
+
+/* SKILLS */
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 13px;
+}
+
+.skill {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+    padding: 20px;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    background: var(--surface);
+    transition: 0.2s;
+}
+
+.skill:hover {
+    border-color: #65569c;
+}
+
+.skill-icon {
+    width: 45px;
+    height: 45px;
+    display: grid;
+    place-items: center;
+    background: #211b31;
+    border-radius: 10px;
+    color: var(--accent);
+    font-weight: 700;
+    font-size: 17px;
+}
+
+.skill h3 {
+    font-size: 15px;
+}
+
+.skill p {
+    font-size: 11px;
+    color: var(--muted);
+}
+
+/* CONTACT */
+
+.contact-card {
+    text-align: center;
+    padding: 75px 25px;
+    border: 1px solid var(--border);
+    background: radial-gradient(circle at 50% 100%, #211934, #101010 65%);
+    border-radius: 18px;
+}
+
+.contact-card h2 {
+    font-size: clamp(29px, 5vw, 47px);
+    letter-spacing: -2px;
+    margin-bottom: 13px;
+}
+
+.contact-card .muted {
+    margin-bottom: 28px;
+}
+
+/* FOOTER */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 30px 0;
+    border-top: 1px solid var(--border);
+}
+
+footer p,
+footer a:not(.logo) {
+    font-size: 11px;
+    color: var(--muted);
+}
+
+/* ANIMATIONS */
+
+.reveal {
+    opacity: 0;
+    transform: translateY(25px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+/* MOBILE */
+
+@media (max-width: 800px) {
+    .hero {
+        min-height: 600px;
+    }
+
+    .hero-side {
+        display: none;
+    }
+
+    .project-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 560px) {
+    .container {
+        width: 90%;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .nav-links {
+        order: 3;
+        width: 100%;
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+    .hero {
+        min-height: 570px;
+    }
+
+    h1 {
+        letter-spacing: -2.5px;
+    }
+
+    .section {
+        padding: 70px 0;
+    }
+
+    .project-grid,
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    footer {
+        flex-wrap: wrap;
+    }
+
+    footer p {
+        order: 3;
+        width: 100%;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+    }
+}
