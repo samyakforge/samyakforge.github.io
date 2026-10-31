@@ -1,16 +1,20 @@
 
-// Automatically update the copyright year
-document.getElementById("year").textContent =
-    new Date().getFullYear();
+// 1. Automatically update the copyright year
+const yearElement = document.getElementById("year");
 
-// Reveal elements when they enter the screen
+if (yearElement) {
+    yearElement.textContent = new Date().getFullYear();
+}
+
+
+// 2. Reveal elements when they enter the screen
 const revealElements = document.querySelectorAll(".reveal");
 
-const observer = new IntersectionObserver((entries) => {
+const revealObserver = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
             entry.target.classList.add("visible");
-            observer.unobserve(entry.target);
+            revealObserver.unobserve(entry.target);
         }
     });
 }, {
@@ -18,10 +22,11 @@ const observer = new IntersectionObserver((entries) => {
 });
 
 revealElements.forEach((element) => {
-    observer.observe(element);
+    revealObserver.observe(element);
 });
 
-// Highlight navigation links based on the current section
+
+// 3. Highlight the active navigation link
 const sections = document.querySelectorAll("main section[id]");
 const navLinks = document.querySelectorAll(".nav-links a");
 
@@ -29,10 +34,10 @@ const navObserver = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
             navLinks.forEach((link) => {
-                link.classList.toggle(
-                    "active",
-                    link.getAttribute("href") === `#${entry.target.id}`
-                );
+                const isActive =
+                    link.getAttribute("href") === `#${entry.target.id}`;
+
+                link.classList.toggle("active", isActive);
             });
         }
     });
