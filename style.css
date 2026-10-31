@@ -1,181 +1,294 @@
 
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-:root {
-    --bg: #090909;
-    --surface: #111111;
-    --text: #f5f5f5;
-    --muted: #929292;
-    --accent: #b7a5ff;
-    --border: #242424;
-}
+    <meta name="description" content="Samyak's personal portfolio. A student exploring programming, computer science and technology.">
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-}
+    <title>Samyak — Developer & Builder</title>
 
-body {
-    background: var(--bg);
-    color: var(--text);
-    font-family: 'DM Sans', sans-serif;
-    line-height: 1.7;
-}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-header {
-    position: sticky;
-    top: 0;
-    z-index: 10;
-    background: rgba(9, 9, 9, 0.85);
-    backdrop-filter: blur(16px);
-    border-bottom: 1px solid var(--border);
-}
+    <link rel="stylesheet" href="style.css">
+</head>
 
-nav {
-    max-width: 1050px;
-    margin: auto;
-    padding: 20px 28px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+<body>
 
-.logo {
-    color: var(--text);
-    font-family: 'Space Grotesk', sans-serif;
-    font-size: 23px;
-    font-weight: 700;
-    text-decoration: none;
-    letter-spacing: -1px;
-}
+    <div class="background-glow"></div>
 
-.nav-links {
-    display: flex;
-    gap: 30px;
-}
+    <header>
+        <nav class="container">
+            <a href="#" class="logo">samyak<span>.</span></a>
 
-.nav-links a {
-    color: var(--muted);
-    text-decoration: none;
-    font-size: 14px;
-    transition: color 0.2s;
-}
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
+            </div>
 
-.nav-links a:hover {
-    color: var(--text);
-}
+            <a class="nav-button" href="https://github.com/samyakforge" target="_blank" rel="noopener noreferrer">
+                GitHub ↗
+            </a>
+        </nav>
+    </header>
 
-main {
-    max-width: 1050px;
-    margin: auto;
-    padding: 0 28px;
-}
+    <main>
 
-.hero {
-    min-height: 570px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-}
+        <!-- HERO -->
 
-.eyebrow {
-    color: var(--accent);
-    font-size: 12px;
-    font-weight: 700;
-    letter-spacing: 2px;
-    margin-bottom: 25px;
-}
+        <section class="hero container">
+            <div class="hero-content reveal">
 
-h1, h2 {
-    font-family: 'Space Grotesk', sans-serif;
-    letter-spacing: -2px;
-}
+                <div class="status">
+                    <span class="status-dot"></span>
+                    Exploring. Learning. Building.
+                </div>
 
-h1 {
-    font-size: clamp(42px, 7vw, 76px);
-    line-height: 1.08;
-    margin-bottom: 25px;
-}
+                <p class="eyebrow">STUDENT DEVELOPER · NEPAL</p>
 
-.intro {
-    max-width: 520px;
-    color: var(--muted);
-    font-size: 17px;
-    margin-bottom: 32px;
-}
+                <h1>
+                    Turning curiosity<br>
+                    into <span class="gradient-text">creation.</span>
+                </h1>
 
-.button {
-    display: inline-block;
-    padding: 12px 21px;
-    background: var(--text);
-    color: #090909;
-    border-radius: 30px;
-    text-decoration: none;
-    font-size: 14px;
-    font-weight: 700;
-    transition: transform 0.2s, background 0.2s;
-}
+                <p class="hero-description">
+                    Hi, I'm Samyak. I enjoy programming, exploring technology
+                    and figuring out how things work. Currently learning,
+                    experimenting and building projects along the way.
+                </p>
 
-.button:hover {
-    transform: translateY(-3px);
-    background: var(--accent);
-}
+                <div class="hero-buttons">
+                    <a href="#projects" class="button primary">
+                        Explore my work <span>↗</span>
+                    </a>
 
-section:not(.hero) {
-    padding: 85px 0;
-    border-top: 1px solid var(--border);
-}
+                    <a href="#about" class="button secondary">
+                        More about me
+                    </a>
+                </div>
 
-h2 {
-    font-size: 34px;
-    margin-bottom: 20px;
-}
+            </div>
 
-section:not(.hero) p {
-    color: var(--muted);
-    max-width: 650px;
-}
+            <div class="hero-side reveal">
+                <div class="orb">
+                    <div class="orb-inner">S<span>.</span></div>
+                </div>
+                <p>Curiosity is where it starts.</p>
+            </div>
+        </section>
 
-#contact a {
-    display: inline-block;
-    margin-top: 10px;
-    color: var(--accent);
-    text-decoration: none;
-}
 
-footer {
-    border-top: 1px solid var(--border);
-    padding: 25px;
-    text-align: center;
-    color: var(--muted);
-    font-size: 13px;
-}
+        <!-- ABOUT -->
 
-@media (max-width: 600px) {
-    nav {
-        padding: 17px 20px;
-    }
+        <section id="about" class="section container reveal">
 
-    .nav-links {
-        gap: 14px;
-    }
+            <div class="section-heading">
+                <p class="eyebrow">01 / ABOUT</p>
+                <h2>A little about me.</h2>
+            </div>
 
-    .nav-links a {
-        font-size: 12px;
-    }
+            <div class="about-grid">
+                <div class="about-main">
+                    <p class="large-text">
+                        I like understanding how things work —
+                        and then trying to build something myself.
+                    </p>
 
-    main {
-        padding: 0 20px;
-    }
+                    <p class="muted">
+                        I'm a student from Nepal interested in computer science,
+                        software development and electronics. I enjoy experimenting
+                        with ideas, learning new technologies and improving through
+                        hands-on projects.
+                    </p>
+                </div>
 
-    .hero {
-        min-height: 500px;
-    }
+                <div class="about-card">
+                    <span class="card-icon">⌘</span>
+                    <h3>Currently exploring</h3>
+                    <p>Programming, web development, electronics and new ideas.</p>
+                </div>
+            </div>
 
-    section:not(.hero) {
-        padding: 60px 0;
-    }
-}
+        </section>
+
+
+        <!-- PROJECTS -->
+
+        <section id="projects" class="section container reveal">
+
+            <div class="section-heading">
+                <p class="eyebrow">02 / PROJECTS</p>
+                <h2>Things I've worked on.</h2>
+                <p class="muted">A collection of experiments and projects.</p>
+            </div>
+
+            <div class="project-grid">
+
+                <article class="project-card">
+                    <div class="project-top">
+                        <span class="project-number">01</span>
+                        <span class="project-arrow">↗</span>
+                    </div>
+
+                    <div class="project-visual visual-one">
+                        <span>01</span>
+                    </div>
+
+                    <h3>Personal Portfolio</h3>
+                    <p>
+                        A personal website built to document my journey,
+                        experiments and projects.
+                    </p>
+
+                    <div class="tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+
+                    <a href="https://github.com/samyakforge/samyakforge.github.io"
+                       target="_blank" rel="noopener noreferrer" class="project-link">
+                        View source code ↗
+                    </a>
+                </article>
+
+                <article class="project-card coming-soon">
+                    <div class="project-top">
+                        <span class="project-number">02</span>
+                        <span class="project-arrow">✳</span>
+                    </div>
+
+                    <div class="project-visual visual-two">
+                        <span>02</span>
+                    </div>
+
+                    <h3>Something in progress</h3>
+                    <p>
+                        An idea waiting to become a real project.
+                        More details coming soon.
+                    </p>
+
+                    <div class="tags">
+                        <span>Experiment</span>
+                        <span>In progress</span>
+                    </div>
+                </article>
+
+                <article class="project-card coming-soon">
+                    <div class="project-top">
+                        <span class="project-number">03</span>
+                        <span class="project-arrow">✳</span>
+                    </div>
+
+                    <div class="project-visual visual-three">
+                        <span>03</span>
+                    </div>
+
+                    <h3>Future project</h3>
+                    <p>
+                        More experiments, more learning and hopefully
+                        something interesting.
+                    </p>
+
+                    <div class="tags">
+                        <span>Coming soon</span>
+                    </div>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- SKILLS -->
+
+        <section id="skills" class="section container reveal">
+
+            <div class="section-heading">
+                <p class="eyebrow">03 / SKILLS</p>
+                <h2>Tools I'm learning.</h2>
+                <p class="muted">
+                    Technologies I'm exploring and improving with.
+                </p>
+            </div>
+
+            <div class="skills-grid">
+                <div class="skill">
+                    <span class="skill-icon">C</span>
+                    <div>
+                        <h3>C / C++</h3>
+                        <p>Programming fundamentals</p>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <span class="skill-icon">⌘</span>
+                    <div>
+                        <h3>HTML & CSS</h3>
+                        <p>Web structure and design</p>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <span class="skill-icon">JS</span>
+                    <div>
+                        <h3>JavaScript</h3>
+                        <p>Interactive web development</p>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <span class="skill-icon">⌁</span>
+                    <div>
+                        <h3>Electronics</h3>
+                        <p>Arduino and embedded systems</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- CONTACT -->
+
+        <section id="contact" class="section container reveal">
+
+            <div class="contact-card">
+                <p class="eyebrow">04 / CONTACT</p>
+
+                <h2>Have an interesting idea?</h2>
+
+                <p class="muted">
+                    I'm always interested in learning, building
+                    and exploring new things.
+                </p>
+
+                <a href="https://github.com/samyakforge"
+                   target="_blank" rel="noopener noreferrer" class="button primary">
+                    Find me on GitHub ↗
+                </a>
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer class="container">
+        <a href="#" class="logo">samyak<span>.</span></a>
+
+        <p>© <span id="year"></span> Samyak. Built with curiosity.</p>
+
+        <a href="https://github.com/samyakforge"
+           target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
